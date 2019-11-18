@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ChartCanvasBaseComponent } from '../../components/chart-canvas-base/chart-canvas-base.component';
+import { ChartCanvasBaseComponent } from '../chart-canvas-base/chart-canvas-base.component';
 
-// templateUrl: './bar-chart-canvas.component.html',
-// styleUrls: ['./bar-chart-canvas.component.scss']
+// templateUrl: '../../components/chart-canvas-base.component.html',
+// styleUrls: ['../../components/chart-canvas-base.component.scss']
 
 @Component({
 	selector: 'bar-chart-canvas',
-	templateUrl: '../../components/chart-canvas-base.component.html',
-	styleUrls: ['../../components/chart-canvas-base.component.scss']
+	templateUrl: './bar-chart-canvas.component.html',
+	styleUrls: ['./bar-chart-canvas.component.scss']
 })
-export class BarChartCanvasComponent extends ChartCanvasBaseComponent {
+export class BarChartCanvasComponent extends ChartCanvasBaseComponent implements OnInit {
 
 	constructor() {
 		// super('bar', 'Bar');
@@ -19,4 +19,8 @@ export class BarChartCanvasComponent extends ChartCanvasBaseComponent {
 
 	// constructor() : super('bar', 'Bar') {
 	// }
+
+	ngOnInit() {
+		super.onInit();
+	}
 }

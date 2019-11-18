@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PieChartCanvasComponent } from './pie-chart-canvas.component';
+import { ChartCanvasBaseComponent } from './chart-canvas-base.component';
 
 @NgModule({
 	declarations: [
-		PieChartCanvasComponent
+		ChartCanvasBaseComponent
 	],
 	imports: [
 		CommonModule
@@ -13,7 +13,7 @@ import { PieChartCanvasComponent } from './pie-chart-canvas.component';
 	exports: [
 		CommonModule,
 		FormsModule,
-		PieChartCanvasComponent
+		ChartCanvasBaseComponent
 	]
 })
-export class PieChartCanvasModule { }
+export class ChartCanvasBaseModule { }

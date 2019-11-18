@@ -1,14 +1,16 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
-import { ChartCanvasBaseComponent } from '../../components/chart-canvas-base/chart-canvas-base.component';
 import { BarChartCanvasComponent } from './bar-chart-canvas.component';
+
+import { ChartCanvasBaseModule } from '../chart-canvas-base/chart-canvas-base.module';
 
 @NgModule({
 	declarations: [
-		ChartCanvasBaseComponent,
 		BarChartCanvasComponent
+	],
+	schemas: [
+		CUSTOM_ELEMENTS_SCHEMA
 	],
 	imports: [
 		CommonModule
@@ -16,7 +18,7 @@ import { BarChartCanvasComponent } from './bar-chart-canvas.component';
 	exports: [
 		CommonModule,
 		FormsModule,
-		ChartCanvasBaseComponent,
+		ChartCanvasBaseModule,
 		BarChartCanvasComponent
 	]
 })
