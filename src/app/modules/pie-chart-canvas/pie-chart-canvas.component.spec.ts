@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChartCanvasBaseComponent } from './chart-canvas-base.component';
+import { PieChartCanvasComponent } from './pie-chart-canvas.component';
 
-describe('ChartCanvasBaseComponent', () => {
-  let component: ChartCanvasBaseComponent;
-  let fixture: ComponentFixture<ChartCanvasBaseComponent>;
+describe('PieChartCanvasComponent', () => {
+	let component: PieChartCanvasComponent;
+	let fixture: ComponentFixture<PieChartCanvasComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ChartCanvasBaseComponent ]
-    })
-    .compileComponents();
-  }));
+	beforeEach(async(() => {
+		TestBed.configureTestingModule({
+			declarations: [ PieChartCanvasComponent ]
+		})
+		.compileComponents();
+	}));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ChartCanvasBaseComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(PieChartCanvasComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

@@ -35,16 +35,21 @@ export class ChartCanvasBaseComponent /* implements AfterViewChecked, OnInit */ 
 	public chartLegend: boolean = true;
 	public chartData: any[];
 
-	chartTypeCapitalized: string = '';
+	chartTypeCapitalized: string = 'Bar';
 
-	// constructor(chartType: string, chartTypeCapitalized: string) {
+	constructor() {
+		// this.chartType = 'bar';
+		// this.chartTypeCapitalized = 'Bar';
+	}
+
+	// protected constructor(chartType: string = 'bar', chartTypeCapitalized: string = 'Bar') {
 	// 	this.chartType = chartType;
 	// 	this.chartTypeCapitalized = chartTypeCapitalized;
 	// }
 
-	constructor() {
-		this.chartType = 'bar';
-		this.chartTypeCapitalized = 'Bar';
+	protected setChartType(chartType: string, chartTypeCapitalized: string) {
+		this.chartType = chartType;
+		this.chartTypeCapitalized = chartTypeCapitalized;
 	}
 
 	// ngOnInit() {

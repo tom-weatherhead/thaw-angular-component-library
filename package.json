@@ -1,52 +1,73 @@
 {
-  "name": "thaw-angular-component-library",
-  "version": "0.0.0",
-  "scripts": {
-    "clean": "rm -rf dist && rm -rf node_modules && rm -f package-lock.json",
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "~8.2.14",
-    "@angular/common": "~8.2.14",
-    "@angular/compiler": "~8.2.14",
-    "@angular/core": "~8.2.14",
-    "@angular/forms": "~8.2.14",
-    "@angular/platform-browser": "~8.2.14",
-    "@angular/platform-browser-dynamic": "~8.2.14",
-    "@angular/router": "~8.2.14",
-    "chart.js": "^2.9.3",
-    "rxjs": "~6.4.0",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.19",
-    "@angular/cli": "~8.3.19",
-    "@angular/compiler-cli": "~8.2.14",
-    "@angular/language-service": "~8.2.14",
-    "@types/chart.js": "^2.9.0",
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "codelyzer": "^5.0.0",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.0",
-    "ng-packagr": "^5.7.1",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
-  }
+	"name": "thaw-angular-component-library",
+	"description": "Components for Angular applications",
+	"private": false,
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tom-weatherhead/thaw-angular-component-library.git"
+	},
+	"homepage": "https://github.com/tom-weatherhead/thaw-angular-component-library#readme",
+	"bugs": {
+		"url": "https://github.com/tom-weatherhead/thaw-angular-component-library/issues"
+	},
+	"scripts": {
+		"all": "npm run clean && npm i && npm run pack-and-deploy",
+		"clean": "rm -rf dist && rm -rf node_modules && rm -f package-lock.json",
+		"pack-and-deploy": "npm run packagr && cd dist && npm pack && mv *.tgz ../../othello-angular-electron/ && cd ..",
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"test": "ng test",
+		"lint": "ng lint",
+		"e2e": "ng e2e",
+		"packagr": "ng-packagr -p ng-package.json"
+	},
+	"dependencies": {
+		"@angular/animations": "~8.2.14",
+		"@angular/common": "~8.2.14",
+		"@angular/compiler": "~8.2.14",
+		"@angular/core": "~8.2.14",
+		"@angular/forms": "~8.2.14",
+		"@angular/platform-browser": "~8.2.14",
+		"@angular/platform-browser-dynamic": "~8.2.14",
+		"@angular/router": "~8.2.14",
+		"@types/chart.js": "^2.9.0",
+		"chart.js": "^2.9.3",
+		"rxjs": "~6.4.0",
+		"tslib": "^1.10.0",
+		"zone.js": "~0.9.1"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "~0.803.19",
+		"@angular/cli": "~8.3.19",
+		"@angular/compiler-cli": "~8.2.14",
+		"@angular/language-service": "~8.2.14",
+		"@types/jasmine": "~3.3.8",
+		"@types/jasminewd2": "~2.0.3",
+		"@types/node": "~8.9.4",
+		"codelyzer": "^5.0.0",
+		"jasmine-core": "~3.4.0",
+		"jasmine-spec-reporter": "~4.2.1",
+		"karma": "~4.1.0",
+		"karma-chrome-launcher": "~2.2.0",
+		"karma-coverage-istanbul-reporter": "~2.0.1",
+		"karma-jasmine": "~2.0.1",
+		"karma-jasmine-html-reporter": "^1.4.0",
+		"ng-packagr": "^5.7.1",
+		"protractor": "~5.4.0",
+		"ts-node": "~7.0.0",
+		"tslint": "~5.15.0",
+		"typescript": "~3.5.3"
+	},
+	"engineStrict": true,
+	"engines": {
+		"node": ">= 10.9"
+	},
+	"keywords": [
+		"Angular",
+		"TypeScript"
+	],
+	"author": "Tom Weatherhead <null@2hrd4u.org> (https://httpbin.org/status/418)",
+	"license": "MIT"
 }
