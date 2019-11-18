@@ -1,0 +1,22 @@
+{
+	"$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+	"lib": {
+		"entryFile": "public_api.ts",
+		"umdModuleIds": {
+			"chart.js": "chart.js"
+		}
+	},
+	"whitelistedNonPeerDependencies": [
+		"@angular/animations",
+		"@angular/common",
+		"@angular/core",
+		"@angular/compiler",
+		"@angular/forms",
+		"@angular/platform-browser",
+		"@angular/router",
+		"chart.js",
+		"rxjs",
+		"zone.js"
+	]
+}
+
