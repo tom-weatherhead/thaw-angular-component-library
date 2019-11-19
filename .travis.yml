@@ -23,6 +23,7 @@ install:
 before_script:
   - webdriver-manager clean
   - webdriver-manager update --versions.chrome=73.0.3683
+  - ls -l /home/travis/build/tom-weatherhead/thaw-angular-component-library/node_modules/protractor/node_modules/webdriver-manager/selenium
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
