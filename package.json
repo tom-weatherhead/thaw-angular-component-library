@@ -63,6 +63,7 @@
 		"karma-jasmine-html-reporter": "^1.4.0",
 		"ng-packagr": "^5.7.1",
 		"protractor": "~5.4.0",
+		"selenium-webdriver": "^4.0.0-alpha.5",
 		"ts-node": "~7.0.0",
 		"tslint": "~5.15.0",
 		"typescript": "~3.5.3"
