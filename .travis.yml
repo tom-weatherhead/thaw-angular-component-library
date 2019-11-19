@@ -1,15 +1,10 @@
-sudo: false
+sudo: required
+dist: xenial
 language: node_js
 node_js:
   - node
 addons:
-  apt:
-    update: true
-    sources:
-      - google-chrome
-    packages:
-      - dpkg
-      - google-chrome-stable
+  chrome: stable
 branches:
   only:
     - master
