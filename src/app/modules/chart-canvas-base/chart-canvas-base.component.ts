@@ -19,7 +19,7 @@ const chartColors = {
 };
 
 @Component({
-	selector: 'chart-canvas-base',
+	// selector: 'chart-canvas-base',
 	templateUrl: './chart-canvas-base.component.html',
 	styleUrls: ['./chart-canvas-base.component.scss']
 })
@@ -31,11 +31,11 @@ export class ChartCanvasBaseComponent /* implements AfterViewChecked, OnInit */ 
 	chart: Chart;
 	public chartOptions: any;
 	public chartLabels: string[];
-	public chartType: string = 'bar';
-	public chartLegend: boolean = true;
+	public chartType: string;
+	public chartLegend = true;
 	public chartData: any[];
 
-	chartTypeCapitalized: string = 'Bar';
+	chartTypeCapitalized: string;
 
 	constructor() {
 		// this.chartType = 'bar';

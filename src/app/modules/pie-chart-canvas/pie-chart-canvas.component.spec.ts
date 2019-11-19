@@ -1,3 +1,4 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PieChartCanvasComponent } from './pie-chart-canvas.component';
@@ -8,7 +9,12 @@ describe('PieChartCanvasComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ PieChartCanvasComponent ]
+			declarations: [
+				PieChartCanvasComponent
+			],
+			schemas: [
+				CUSTOM_ELEMENTS_SCHEMA
+			]
 		})
 		.compileComponents();
 	}));

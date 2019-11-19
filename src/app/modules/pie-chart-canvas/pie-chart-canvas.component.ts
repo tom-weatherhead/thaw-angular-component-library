@@ -6,7 +6,7 @@ import { ChartCanvasBaseComponent } from '../chart-canvas-base/chart-canvas-base
 // styleUrls: ['./pie-chart-canvas.component.scss']
 
 @Component({
-	selector: 'pie-chart-canvas',
+	selector: 'app-pie-chart-canvas',
 	templateUrl: '../chart-canvas-base/chart-canvas-base.component.html',
 	styleUrls: ['../chart-canvas-base/chart-canvas-base.component.scss']
 })
