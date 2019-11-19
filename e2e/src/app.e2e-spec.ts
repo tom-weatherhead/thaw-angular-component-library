@@ -8,9 +8,16 @@ describe('workspace-project App', () => {
 		page = new AppPage();
 	});
 
-	it('should display welcome message', () => {
-		page.navigateTo();
-		expect(page.getTitleText()).toEqual('thaw-angular-component-library app is running!');
+	// it('should display welcome message', () => {
+	// 	page.navigateTo();
+	// 	expect(page.getTitleText()).toEqual('thaw-angular-component-library app is running!');
+	// });
+
+	it('should be Foo', () => {
+		const foo = 'Foo';
+
+		// page.navigateTo();
+		expect(foo).toEqual(foo);
 	});
 
 	afterEach(async () => {

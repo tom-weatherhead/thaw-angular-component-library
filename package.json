@@ -14,7 +14,9 @@
 	"scripts": {
 		"all": "npm run clean && npm i && npm run test-all && npm run pack-and-deploy",
 		"all-notests": "npm run clean && npm i && npm run pack-and-deploy",
+		"all-for-travis": "npm run clean && npm i && npm run test-all && npm run pack",
 		"clean": "rm -rf dist && rm -rf node_modules && rm -f package-lock.json",
+		"pack": "npm run packagr && cd dist && npm pack && cd ..",
 		"pack-and-deploy": "npm run packagr && cd dist && npm pack && mv *.tgz ../../othello-angular-electron/ && cd ..",
 		"ng": "ng",
 		"start": "ng serve",
