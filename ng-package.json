@@ -15,6 +15,7 @@
 		"@angular/platform-browser",
 		"@angular/router",
 		"chart.js",
+		"chromedriver",
 		"rxjs",
 		"zone.js"
 	]
