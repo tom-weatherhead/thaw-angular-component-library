@@ -125,5 +125,5 @@
         }
       }
     }},
-  "defaultProject": "thaw-angular-component-library"
+	"defaultProject": "thaw-angular-component-library"
 }
