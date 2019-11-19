@@ -40,6 +40,7 @@
 		"@angular/router": "^8.2.14",
 		"@types/chart.js": "^2.9.0",
 		"chart.js": "^2.9.3",
+		"chromedriver": "^73.0.0",
 		"rxjs": "^6.5.3",
 		"tslib": "^1.10.0",
 		"zone.js": "0.9.1"
@@ -52,7 +53,6 @@
 		"@types/jasminewd2": "^2.0.8",
 		"@types/jquery": "^3.3.31",
 		"@types/node": "^12.12.6",
-		"chromedriver": "^78.0.1",
 		"codelyzer": "^5.2.0",
 		"jasmine-core": "^3.5.0",
 		"jasmine-spec-reporter": "^4.2.1",
