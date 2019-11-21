@@ -14,7 +14,7 @@ exports.config = {
 	],
 	capabilities: {
 		'browserName': 'chrome',
-		chromeDriver: './node_modules/chromedriver/lib/chromedriver/chromedriver_73.0.3683.20',
+		// chromeDriver: './node_modules/chromedriver/lib/chromedriver/chromedriver_73.0.3683.20',
 		chromeOptions: {
 			args: [
 				'--disable-dev-shm-usage',
