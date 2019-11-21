@@ -14,11 +14,8 @@ exports.config = {
 	],
 	capabilities: {
 		'browserName': 'chrome',
-		// chromeDriver: './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_78.0.3904.70',
-		// chromeDriver: './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_73.0.3683.20',
 		chromeDriver: './node_modules/chromedriver/lib/chromedriver/chromedriver_73.0.3683.20',
 		chromeOptions: {
-			// args: ['--headless', '--disable-gpu', '--window-size=1024,768', '--no-sandbox']
 			args: [
 				'--disable-dev-shm-usage',
 				'--disable-gpu',
@@ -26,8 +23,6 @@ exports.config = {
 				'--no-sandbox',
 				'--window-size=1024,768'
 			]
-			// args: ['--headless', '--disable-gpu', '--window-size=1024,768']
-			// args: []
 		}
 	},
 	directConnect: true,
