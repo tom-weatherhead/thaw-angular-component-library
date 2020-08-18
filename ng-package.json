@@ -13,6 +13,7 @@
 		"@angular/compiler",
 		"@angular/core",
 		"@angular/forms",
+		"@angular/localize",
 		"@angular/platform-browser",
 		"@angular/router",
 		"chart.js",
