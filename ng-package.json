@@ -3,21 +3,21 @@
 	"lib": {
 		"entryFile": "public_api.ts",
 		"umdModuleIds": {
-			"chart.js": "chart.js"
+			"chart.js": "chart.js",
+			"thaw-colour": "thaw-colour",
+			"thaw-common-utilities.ts": "thaw-common-utilities.ts"
 		}
 	},
 	"whitelistedNonPeerDependencies": [
-		"@angular/animations",
 		"@angular/common",
-		"@angular/core",
 		"@angular/compiler",
+		"@angular/core",
 		"@angular/forms",
 		"@angular/platform-browser",
 		"@angular/router",
 		"chart.js",
-		"chromedriver",
-		"rxjs",
+		"thaw-colour",
+		"thaw-common-utilities.ts",
 		"zone.js"
 	]
 }
-

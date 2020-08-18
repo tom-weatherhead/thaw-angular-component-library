@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+	Component,
+	// ChangeDetectorRef, // ChangeDetectorRef not needed
+	OnInit
+} from '@angular/core';
 
 import { ChartCanvasBaseComponent } from '../chart-canvas-base/chart-canvas-base.component';
 
@@ -10,10 +14,11 @@ import { ChartCanvasBaseComponent } from '../chart-canvas-base/chart-canvas-base
 	templateUrl: '../chart-canvas-base/chart-canvas-base.component.html',
 	styleUrls: ['../chart-canvas-base/chart-canvas-base.component.scss']
 })
-export class BarChartCanvasComponent extends ChartCanvasBaseComponent implements OnInit {
-
+export class BarChartCanvasComponent extends ChartCanvasBaseComponent
+	implements OnInit {
+	// constructor(protected changeDetectorRef: ChangeDetectorRef) { // changeDetectorRef not needed
 	constructor() {
-		// super('bar', 'Bar');
+		// super(changeDetectorRef);
 		super();
 
 		super.setChartType('bar', 'Bar');

@@ -1,19 +1,19 @@
+// src/app/modules/chart-canvas-base/chart-canvas-base.module.ts
+
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+// import { CommonModule } from '@angular/common';
+// import { FormsModule } from '@angular/forms';
 import { ChartCanvasBaseComponent } from './chart-canvas-base.component';
 
 @NgModule({
-	declarations: [
-		ChartCanvasBaseComponent
-	],
-	imports: [
-		CommonModule
-	],
+	declarations: [ChartCanvasBaseComponent],
+	// imports: [
+	// 	CommonModule
+	// ],
 	exports: [
-		CommonModule,
-		FormsModule,
+		// CommonModule,
+		// FormsModule,
 		ChartCanvasBaseComponent
 	]
 })
-export class ChartCanvasBaseModule { }
+export class ChartCanvasBaseModule {}

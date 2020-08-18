@@ -1,8 +1,9 @@
 // SystemJS module definition
-declare var module: NodeModule;
 
-interface NodeModule {
-	id: string;
-}
+// declare var module: NodeModule;
 
-declare module 'chart.js';
+// interface NodeModule {
+// 	id: string;
+// }
+
+// declare module 'chart.js';
