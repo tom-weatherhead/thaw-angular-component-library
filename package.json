@@ -72,7 +72,7 @@
 	"publishConfig": {},
 	"dependencies": {
 		"@angular/common": "^10.0.10",
-		"@angular/compiler": "^10.0.10",
+		"@angular/compiler": "^19.2.17",
 		"@angular/core": "^10.0.10",
 		"@angular/forms": "^10.0.10",
 		"@angular/localize": "^10.0.10",
